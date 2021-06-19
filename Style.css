@@ -1,0 +1,95 @@
+
+body {
+    max-width: 1868px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+   
+}
+
+.header {
+    
+    height: 8.3889rem;
+    padding-left: 159px;
+    padding-right: 107px;
+    
+}
+.header-container  {
+    display: inline-flex;
+    border-bottom: 1px solid #06060626; 
+    padding-left: 24.1111rem;
+}
+
+.links {
+    /* width: 769px; */
+    height: 34px;
+    /* text-align: center; */
+    line-height: 34px;
+    margin-top: 3.5556rem;
+    margin-bottom: 2.9444rem;
+    
+}
+.links a+a {
+    margin-left: 2.7222rem;
+}
+.links a:hover {
+    color: #060606;
+    cursor: pointer;
+    border-bottom: 3px solid black;
+   
+}
+.kalbos {
+    width: 70px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 20.6667rem;
+    margin-top: 3.5556rem;
+}
+.kalbos a+a {
+    margin-left: 1.3889rem;
+}
+.kalbos a:hover {
+    color: #060606;
+    cursor: pointer;
+    border-bottom: 3px solid black;  
+}
+
+.links a, .kalbos a {
+    font-size: 0.9444rem;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    color: #060606;
+}
+.search { 
+    background-color: #446CCD;
+    width: 65px;
+    margin-left: 2.7778rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 64px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin-top: 2.3889rem;
+    margin-bottom: 2.3889rem;
+    
+}
+.search i:hover {
+    cursor: pointer;
+}
+
+.main {
+    width: 43.1667rem;
+    height: 24.3333rem;
+    background-color: brown;
+    margin-top: 13.3%;
+    margin-left: 8.5%;
+    margin-bottom: 15.53% ;
+    
+    
+}
+.footer {
+    width: 100%;
+    height: 8rem;
+    background-color: chocolate;
+    padding-right: 107px;
+}
