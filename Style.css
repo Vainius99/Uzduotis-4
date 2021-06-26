@@ -11,22 +11,30 @@ a {
 text-decoration: none;
 /* transition: all 0.3s ease; */
 }
-
+.container {
+    padding-left: 8.4%;
+    padding-right:6.3%;
+}
 .header {
-    
     height: 8.3889rem;
-    padding-left: 8.8333rem;
-    padding-right: 5.9444rem;
+    /* padding-left: 158.9994px;
+    padding-right: 106.9992px; */
+    /* padding-left: 8.4%;
+    padding-right:6.3%; */
     
 }
 .header-container  {
-    display: inline-flex;
+    /* display: inline-flex; */
     border-bottom: 1px solid #06060626; 
-    padding-left: 15.2778rem;
+    /* padding-left: 275.0004px; */
+    padding-left: 14.72%;
+    display: flex;
+    
 }
 
 .links {
-    width: 769px;
+    /* width: 769px; */
+    width: 59.34%;
     height: 34px;
     /* text-align: center; */
     line-height: 34px;
@@ -44,11 +52,15 @@ text-decoration: none;
 margin-left: 40px;
 } */
 .kalbos {
-    width: 70px;
+    /* width: 70px; */
+    width: 4.76%;
     height: 34px;
     text-align: center;
     line-height: 34px;
-    margin-left: 20.6667rem;
+    /* margin-left: 372.0006px; */
+    /* padding-left: 372px; */
+    padding-left: 35%;
+    /* margin-left: 19.91%; */
     margin-top: 3.5556rem;
     display: flex;
     justify-content: space-between;
@@ -71,7 +83,8 @@ margin-left: 40px;
 .search { 
     background-color: #446CCD;
     width: 65px;
-    margin-left: 50.0004px;
+    /* margin-left: 50.0004px; */
+    margin-left: 3.4%;
     text-align: center;
     vertical-align: middle;
     line-height: 64px;
@@ -88,14 +101,15 @@ margin-left: 40px;
 /* testi nuo cia */
 
 .main {
-    width: 43.1667rem;
+    /* width: 777.0006px; */
+    width: 41.59%;
     /* height: 437.9994px; */
     /* background-color: brown; */
     /* margin-top: 13.3%;
     margin-left: 8.5%;
     margin-bottom: 15.53% ; */
     margin-top: 7.6111rem;
-    margin-left: 8.7778rem;
+    /* margin-left: 8.7778rem; */
     margin-bottom: 8.8889rem;
 }
 .main-header { 
@@ -136,7 +150,8 @@ margin-left: 40px;
 .main-search-icon {
     position: absolute;
     top: 1.6667rem;
-    left: 46.3889rem;
+    /* left: 835.0002px; */
+    left: 108%;
 }
 .main-button { 
     margin-top: 3.3333rem;
@@ -155,23 +170,33 @@ margin-left: 40px;
 }
 .footer {
     height: 8.3889rem;
-    padding-left: 8.8333rem;
-    padding-right: 5.9444rem;
+    /* padding-left: 8.8333rem;
+    padding-right: 5.9444rem; */
+    /* padding-left: 8.4%;
+    padding-right:6.3%; */
 }
 .footer-container {
     /* display: inline-flex; */
     border-top: 1px solid #06060626; 
-    padding-left: 15.2778rem;
-    /* width: 100%; */
+    /* padding-left: 275.0004px; */
+    padding-left: 14.72%;
 }
 .footer-container-link {
     width: 3.9444rem;
-    padding-left: 69.4444rem;
+    /* padding-left: 1249.9992px; */
+    padding-left: 94.40%;
     display: flex;
     justify-content: space-between;
     margin-top: 3.4444rem;
     margin-bottom: 3.4444rem;
 }
-@media screen (max-width: 1370px) {
+
+/* testi nuo cia  */
+
+@media screen (max-width: 1200px) {
+    .header-container {
+        padding-left: none;
+    }
+    
 
 }
