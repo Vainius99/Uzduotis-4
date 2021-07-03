@@ -6,6 +6,7 @@ body {
     max-width: 1868px;
     background-color: #FFFFFF;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
 }
 a {
 text-decoration: none;
@@ -13,7 +14,7 @@ text-decoration: none;
 }
 .container {
     padding-left: 8.4%;
-    padding-right:6.3%;
+    padding-right: 6.3%;
 }
 .header {
     height: 8.3889rem;
@@ -21,28 +22,37 @@ text-decoration: none;
     padding-right: 106.9992px; */
     /* padding-left: 8.4%;
     padding-right:6.3%; */
+    /* padding-left: 14.72%; */
+    border-bottom: 1px solid #06060626; 
     
 }
 .header-container  {
-    /* display: inline-flex; */
-    border-bottom: 1px solid #06060626; 
-    /* padding-left: 275.0004px; */
+    background-color: white;
     padding-left: 14.72%;
-    display: flex;
     
+    /* border-bottom: 1px solid #06060626;  */
+    /* padding-left: 275.0004px; */
+    /* padding-left: 14.72%; */
+    
+    
+}
+.nav-bar {
+    display: flex;
+    width: 100%;
 }
 
 .links {
     /* width: 769px; */
     width: 59.34%;
-    height: 34px;
-    /* text-align: center; */
+    /* height: 34px; */
+    text-align: center;
     line-height: 34px;
     margin-top: 3.5556rem;
     margin-bottom: 2.9444rem;
     display: flex;
     justify-content: space-between;
 }
+
 .links a:hover {
     color: #060606;
     cursor: pointer;
@@ -52,19 +62,20 @@ text-decoration: none;
 margin-left: 40px;
 } */
 .kalbos {
-    /* width: 70px; */
+    
     width: 4.76%;
     height: 34px;
     text-align: center;
     line-height: 34px;
-    /* margin-left: 372.0006px; */
-    /* padding-left: 372px; */
     padding-left: 35%;
-    /* margin-left: 19.91%; */
     margin-top: 3.5556rem;
     display: flex;
     justify-content: space-between;
 }
+/* .item {
+    display: block;
+    padding-left: 50px;
+} */
 /* .kalbos a+a {
     margin-left: 25.000px; }*/
 
@@ -86,12 +97,13 @@ margin-left: 40px;
     /* margin-left: 50.0004px; */
     margin-left: 3.4%;
     text-align: center;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     line-height: 64px;
     font-family: 'Poppins', sans-serif;
     color: #FFFFFF;
     margin-top: 2.3889rem;
     margin-bottom: 2.3889rem;
+    display: block;
     
 }
 .search i:hover {
@@ -102,25 +114,24 @@ margin-left: 40px;
 
 .main {
     /* width: 777.0006px; */
-    width: 41.59%;
-    /* height: 437.9994px; */
-    /* background-color: brown; */
-    /* margin-top: 13.3%;
-    margin-left: 8.5%;
-    margin-bottom: 15.53% ; */
+    /* width: 41.59%; */
     margin-top: 7.6111rem;
     /* margin-left: 8.7778rem; */
     margin-bottom: 8.8889rem;
+   
 }
 .main-header { 
     font-family: 'Poppins', sans-serif;
     font-size: 4.2222rem;
+    width: 42.0556rem;
 }
 .main-text {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     font-size: 1.0556rem;
     margin-top: 0.7222rem;
     margin-bottom: 2.8333rem;
+    width: 42.0556rem;
+    
 }
 .main-text a {
     color: #6C6C6C;
@@ -131,6 +142,7 @@ margin-left: 40px;
     display: block;
     margin: none;
     position: relative;
+    width: 42.0556rem;
 }
 .main-search-text {
     width: 100%;
@@ -176,14 +188,11 @@ margin-left: 40px;
     padding-right:6.3%; */
 }
 .footer-container {
-    /* display: inline-flex; */
     border-top: 1px solid #06060626; 
-    /* padding-left: 275.0004px; */
     padding-left: 14.72%;
 }
 .footer-container-link {
     width: 3.9444rem;
-    /* padding-left: 1249.9992px; */
     padding-left: 94.40%;
     display: flex;
     justify-content: space-between;
@@ -191,12 +200,166 @@ margin-left: 40px;
     margin-bottom: 3.4444rem;
 }
 
-/* testi nuo cia  */
+/* hamburgris */
+.icon {
+    position:relative;
+}
 
-@media screen (max-width: 1200px) {
-    .header-container {
-        padding-left: none;
-    }
-    
+.icon, .icon:after, .icon:before {
+    display: block;
+    width: 1.5rem;
+    height: 0.1875rem;
+    background-color: #555555;
+    transition: background-color 0.3s linear, transform 0.3s linear;
+    font-size: larger;
 
 }
+
+.icon:after, .icon:before {
+    position:absolute;
+    content:"";
+}
+
+.icon:after {
+    top: 0.5rem;
+}
+
+.icon:before {
+    top: -0.5rem;
+}
+
+.toggle {
+    display: none;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding-top: 66px;
+    padding-right: 130px;
+}
+
+
+.toggle.active .icon {
+    background-color: transparent;
+}
+
+.toggle.active .icon:before {
+    transform: translateY(0.5rem) rotate(45deg);
+}
+
+.toggle.active .icon:after {
+    transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+@media screen and (max-width: 1550px) {
+    
+    .header-container {
+        
+        padding-left: 0;
+    } 
+    
+    @media screen and (max-width: 1300px) {
+        
+
+        .header-container {
+            position: absolute;
+            width: 8.3333rem;
+            top: 0;
+            border-bottom: 1px solid #06060626; 
+            border-right: 1px solid #06060626; 
+          
+        }
+        
+
+        .area {
+          
+            flex-flow: column wrap;
+        }
+
+        .toggle {
+            display:block;
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+        }
+
+        .nav-bar {
+            display:none;
+        }
+
+        .nav-bar.active {
+            display:flex;
+            flex-direction: column;
+        }
+        .links {
+            justify-content: none;
+            display: flex;
+            padding: 0;
+            flex-direction: column;
+            text-align: unset;
+            width: auto;
+            
+        }
+        .links a, .kalbos a { 
+            display: block;
+            line-height: 36px;
+            
+        }
+        .kalbos {
+            justify-content: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            text-align: unset;
+            width: auto;
+            
+
+        }
+        .search {
+            padding:0;
+            display: block;
+            margin-left:0;
+        }
+
+        .links a:hover {
+            color: #060606;
+            cursor: pointer;
+            border-bottom: none;
+            text-decoration: underline;
+        }
+        .kalbos a:hover {
+            color: #060606;
+            cursor: pointer;
+            border-bottom: none;
+            text-decoration: underline;
+            
+        }
+
+        
+        
+            @media screen and (max-width: 1050px) {
+                .main-text {
+                    width: 100%;
+                }
+                .main-search {
+                    width: 90%;
+                    
+                }
+                .main-search-icon {
+                    left: 100%;
+                }
+                .main-search.text {
+                width: 95%;
+                }
+                .main-search-text input {
+                width: 95%;
+                }
+
+            }
+
+            
+    }
+
+}
+
+

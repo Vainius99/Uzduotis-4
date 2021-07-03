@@ -14,22 +14,27 @@
     <div class="container">
         <div class="header">
             <div class="header-container">
-                <div class="links">
-                    <a href="#" class="item -link">SERVICES</a>
-                    <a href="#" class="item -link">ABOUT US</a>
-                    <a href="#" class="item -link">OUR TEAM</a>
-                    <a href="#" class="item -link">TESTIMONIALS</a>
-                    <a href="#" class="item -link">NEWS</a>
-                    <a href="#" class="item -link">CONTACTS</a>
-                </div>
-                <div class="kalbos"> 
-                    <a href="#" class="item -link">RU</a>
-                    <a href="#" class="item -link">EN</a>
-                </div>
-                <div class="search">
-                    <i class="fa fa-search fa-lg"></i>
-                </div>
+                <nav id="navigation" class="nav-bar area">
+                    <div class="links">
+                        <a href="#" class="item -link">SERVICES</a>
+                        <a href="#" class="item -link">ABOUT US</a>
+                        <a href="#" class="item -link">OUR TEAM</a>
+                        <a href="#" class="item -link">TESTIMONIALS</a>
+                        <a href="#" class="item -link">NEWS</a>
+                        <a href="#" class="item -link">CONTACTS</a>
+                    </div>
+                    <div class="kalbos"> 
+                        <a href="#" class="item -link">RU</a>
+                        <a href="#" class="item -link">EN</a>
+                    </div>
+                    <div class="search">
+                        <i class="fa fa-search fa-lg"></i>
+                    </div>
+                </nav>
             </div>
+            <button id="hamburger" class="toggle">
+                <span class="icon"></span>
+            </button>
         </div>
         <div class="main">
             <div class="main-header"> <a>404 ERROR</a></div>
@@ -50,6 +55,15 @@
 
         </div>
     </div>
+
+    <script>
+
+        document.querySelector('.toggle').onclick = function() {
+           this.classList.toggle('active');
+           document.querySelector('.nav-bar').classList.toggle('active');
+        }
+       
+    </script>
     
 </body>
 </html>
