@@ -44,7 +44,7 @@ text-decoration: none;
 .links {
     /* width: 769px; */
     width: 59.34%;
-    /* height: 34px; */
+    height: 34px;
     text-align: center;
     line-height: 34px;
     margin-top: 3.5556rem;
@@ -297,6 +297,7 @@ margin-left: 40px;
             flex-direction: column;
             text-align: unset;
             width: auto;
+            height: auto;
             
         }
         .links a, .kalbos a { 
@@ -356,6 +357,8 @@ margin-left: 40px;
                 }
 
             }
+
+            /* klaida mazam ekrane */
 
             
     }
